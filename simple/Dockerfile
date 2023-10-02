@@ -1,7 +1,11 @@
 FROM node:20
 
+#Install some dependencies
 
-#COPY ./package*.json ./
+WORKDIR /usr/app
+COPY ./ /usr/app
 RUN npm install
 EXPOSE 3000
-CMD npm start
+
+# Set up a default command
+CMD [ "npm","start" ]
