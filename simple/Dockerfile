@@ -11,7 +11,7 @@ RUN npm install
 # Bundle app source
 COPY . .
 EXPOSE 8080
-CMD [ "node", "server.js" ]
+CMD [ "node", "index.js" ]
 
 # Set up a default command
 #CMD [ "npm","start" ]
